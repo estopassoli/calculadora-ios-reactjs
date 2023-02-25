@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  font-family: 'Open Sans';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 900 !important;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.calculator {
+  background-color: #000;
+  width: 380px;
+  height: 696px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+
+.display {
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+  border: none;
+  
+}
+
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  border-radius: 0 0 40px 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  transition: all ease-in-out .2s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: none;
+
+}
+
+.row>.gray {
+  background-color: #c5c5c5;
+  color: #000;
+}
+
+.gray:hover {
+  background-color: #ffffff;
+}
+
+.orange {
+  background-color: #ffb121;
+  color: #fff;
+}
+
+.orange:hover {
+  background-color: #fff;
+  color: #ffb121;
+}
+
+.orange:focus {
+  background-color: #fff;
+  color: #ffb121;
+}
+
+.number {
+  background-color: #555555;
+  color: #fff;
+}
+
+.number:hover {
+  background-color: #ffffff7e;
+}
+
+.display>.result {
+  background-color: transparent;
+  width: 100%;
+  text-align: end;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 48px;
+  margin-top: auto;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  height: max-content;
+}
